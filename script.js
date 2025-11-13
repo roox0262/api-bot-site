@@ -16,7 +16,7 @@ function testAPI(url) {
         .catch(err => alert('API Hatası: ' + err));
 }
 
-// Telegram linklerine yönlendirme
+// Telegram butonları
 function goToLink(url) {
     window.open(url, '_blank');
 }
