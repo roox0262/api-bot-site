@@ -16,5 +16,6 @@ function goToLink(url) {
 document.getElementById('play-music').addEventListener('click', function() {
   const music = document.getElementById('bg-music');
   music.play();
-  alert('🎶 Bloc3 Escobar müziği çalıyor!');
+  alert('🎶 Goril müziği çalıyor!');
 });
+
