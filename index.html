@@ -10,29 +10,29 @@
 <body>
 
 <!-- Arka plan müziği -->
-<audio id="bg-music" src="https://www.bensound.com/bensound-music/bensound-bossanova.mp3" loop autoplay></audio>
+<audio id="bg-music" src="https://cdn.pixabay.com/audio/2023/09/29/audio_5d34b1d9c9.mp3" loop></audio>
 
 <header>APİ & Bot Platformu</header>
 
 <div class="container">
     <div class="card" onclick="showContent('apis')"><h2>APİLERİMİZ</h2></div>
-    <div class="card" onclick="showContent('sorgu')"><h2>Sorgu Botu</h2></div>
-    <div class="card" onclick="showContent('kurucu')"><h2>Kurucu</h2></div>
+    <button id="play-music" class="music-btn">🎵 Müziği Başlat</button>
 </div>
 
 <div class="content" id="apis">
     <h2>APİLERİMİZ</h2>
     <div class="api-list">
+
         <div class="api-item">
             <span>Ad Soyad API</span>
             <div class="api-buttons">
-                <!-- Test Et artık <a> ile yeni sekmede açılacak -->
                 <a href="https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=" target="_blank">
                     <button class="test-btn">Test Et</button>
                 </a>
                 <button class="copy-btn" onclick="copyAPI('https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=')">Kopyala</button>
             </div>
         </div>
+
         <div class="api-item">
             <span>Rastgele Kullanıcı API</span>
             <div class="api-buttons">
@@ -42,19 +42,14 @@
                 <button class="copy-btn" onclick="copyAPI('https://api.example.com/randomuser')">Kopyala</button>
             </div>
         </div>
+
     </div>
-</div>
 
-<div class="content" id="sorgu">
-    <h2>Sorgu Botu</h2>
-    <p>Telegram Sorgu Botuna gitmek için tıkla:</p>
-    <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Sorgu Botu</button>
-</div>
-
-<div class="content" id="kurucu">
-    <h2>Kurucu</h2>
-    <p>Kurucuya gitmek için tıkla:</p>
-    <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Kurucu</button>
+    <h3 class="sub-header">Telegram</h3>
+    <div class="telegram-links">
+        <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Sorgu Botu</button>
+        <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Kurucu</button>
+    </div>
 </div>
 
 <script src="script.js"></script>
