@@ -47,8 +47,24 @@ header {
     box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     background: rgba(0,0,0,0.7);
 }
-
 .card h2 { font-size: 1.8em; color: #fff; }
+
+.music-btn {
+    background: linear-gradient(135deg, #ff4b1f, #ff9068);
+    padding: 25px 25px;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.music-btn:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
 
 .content {
     display: none;
@@ -91,8 +107,9 @@ header {
 .copy-btn { background: #118ab2; }
 .copy-btn:hover { background: #0f7a99; }
 
+.telegram-links { margin-top: 20px; display: flex; gap: 15px; justify-content: center; }
+
 button.send-btn {
-    margin-top: 20px;
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: 700;
