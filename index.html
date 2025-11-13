@@ -4,62 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>APİ & Bot Platformu</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Arka plan müziği -->
+<!-- 🎵 Müzik -->
 <audio id="bg-music" src="https://cdn.pixabay.com/audio/2023/09/29/audio_5d34b1d9c9.mp3" loop></audio>
 <button id="play-music" class="music-btn">🎵 Müziği Başlat</button>
 
-<header>APİ & Bot Platformu</header>
+<header>
+  <h1>APİ & Bot Platformu</h1>
+</header>
 
-<div class="container">
-    <div class="card" onclick="showContent('apis')"><h2>APİLERİMİZ</h2></div>
-    <div class="card" onclick="showContent('sorgu')"><h2>SORGU BOTU</h2></div>
-    <div class="card" onclick="showContent('kurucu')"><h2>KURUCU</h2></div>
+<!-- 🧩 Ana Menü -->
+<div class="menu-container">
+  <div class="menu-btn" onclick="showContent('apis')">APİLERİMİZ</div>
+  <div class="menu-btn" onclick="showContent('sorgu')">SORGU BOTU</div>
+  <div class="menu-btn" onclick="showContent('kurucu')">KURUCU</div>
 </div>
 
-<!-- APİLER -->
-<div class="content" id="apis">
-    <h2>APİLERİMİZ</h2>
-    <div class="api-list">
-        <div class="api-item">
-            <span>Ad Soyad API</span>
-            <div class="api-buttons">
-                <a href="https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=" target="_blank">
-                    <button class="test-btn">Test Et</button>
-                </a>
-                <button class="copy-btn" onclick="copyAPI('https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=')">Kopyala</button>
-            </div>
-        </div>
-
-        <div class="api-item">
-            <span>Rastgele Kullanıcı API</span>
-            <div class="api-buttons">
-                <a href="https://api.example.com/randomuser" target="_blank">
-                    <button class="test-btn">Test Et</button>
-                </a>
-                <button class="copy-btn" onclick="copyAPI('https://api.example.com/randomuser')">Kopyala</button>
-            </div>
-        </div>
+<!-- 📜 APİLER -->
+<section class="content" id="apis">
+  <h2>APİLERİMİZ</h2>
+  <div class="api-box">
+    <p>Ad Soyad API</p>
+    <div class="btn-group">
+      <a href="https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=" target="_blank">
+        <button class="test-btn">Test Et</button>
+      </a>
+      <button class="copy-btn" onclick="copyAPI('https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=')">Kopyala</button>
     </div>
-</div>
+  </div>
+</section>
 
-<!-- SORGU BOTU -->
-<div class="content" id="sorgu">
-    <h2>Sorgu Botu</h2>
-    <p>Telegram Sorgu Botuna gitmek için tıkla:</p>
-    <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Sorgu Botu</button>
-</div>
+<!-- 🤖 SORGU BOTU -->
+<section class="content" id="sorgu">
+  <h2>Sorgu Botu</h2>
+  <p>Telegram botuna ulaşmak için tıkla:</p>
+  <button class="go-btn" onclick="goToLink('https://t.me/Zynex00')">Sorgu Botu</button>
+</section>
 
-<!-- KURUCU -->
-<div class="content" id="kurucu">
-    <h2>Kurucu</h2>
-    <p>Kurucuya ulaşmak için tıkla:</p>
-    <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Kurucu</button>
-</div>
+<!-- 👑 KURUCU -->
+<section class="content" id="kurucu">
+  <h2>Kurucu</h2>
+  <p>Kurucuya mesaj göndermek için tıkla:</p>
+  <button class="go-btn" onclick="goToLink('https://t.me/Zynex00')">Kurucu</button>
+</section>
 
 <script src="script.js"></script>
 </body>
