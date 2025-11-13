@@ -9,12 +9,15 @@
 </head>
 <body>
 
+<!-- Arka plan müziği -->
+<audio id="bg-music" src="https://www.bensound.com/bensound-music/bensound-bossanova.mp3" loop autoplay></audio>
+
 <header>APİ & Bot Platformu</header>
 
 <div class="container">
     <div class="card" onclick="showContent('apis')"><h2>APİLERİMİZ</h2></div>
-    <div class="card" onclick="showContent('sorgu')"><h2>SORGU BOTUMUZ</h2></div>
-    <div class="card" onclick="showContent('kurucu')"><h2>KURUCU</h2></div>
+    <div class="card" onclick="showContent('sorgu')"><h2>Sorgu Botu</h2></div>
+    <div class="card" onclick="showContent('kurucu')"><h2>Kurucu</h2></div>
 </div>
 
 <div class="content" id="apis">
@@ -38,15 +41,15 @@
 </div>
 
 <div class="content" id="sorgu">
-    <h2>SORGU BOTUMUZ</h2>
-    <p>Telegram botunuza sorgu göndermek için butona tıklayın:</p>
-    <button class="send-btn" onclick="sendToTelegram('sorgu')">Sorgu Gönder</button>
+    <h2>Sorgu Botu</h2>
+    <p>Telegram Sorgu Botuna gitmek için butona tıkla:</p>
+    <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Sorgu Botu</button>
 </div>
 
 <div class="content" id="kurucu">
-    <h2>KURUCU</h2>
-    <p>Kurucuya mesaj göndermek için:</p>
-    <button class="send-btn" onclick="sendToTelegram('kurucu')">Mesaj Gönder</button>
+    <h2>Kurucu</h2>
+    <p>Kurucuya mesaj göndermek için butona tıkla:</p>
+    <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Kurucu</button>
 </div>
 
 <script src="script.js"></script>
