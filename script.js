@@ -4,11 +4,6 @@ function showContent(section) {
     document.getElementById(section).style.display = 'block';
 }
 
-// Yeni sekmede URL açma (Test Et)
-function openInNewTab(url) {
-    window.open(url, '_blank');
-}
-
 // Kopyalama
 function copyAPI(url) {
     navigator.clipboard.writeText(url)
