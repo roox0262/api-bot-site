@@ -9,20 +9,19 @@
 </head>
 <body>
 
-<!-- Müzik -->
+<!-- Arka plan müziği -->
 <audio id="bg-music" src="https://cdn.pixabay.com/audio/2023/09/29/audio_5d34b1d9c9.mp3" loop></audio>
 <button id="play-music" class="music-btn">🎵 Müziği Başlat</button>
 
-<header>
-    <h1>APİ & Bot Platformu</h1>
-    <nav class="menu">
-        <button onclick="showContent('apis')">APİLERİMİZ</button>
-        <button onclick="showContent('sorgu')">SORGU BOTU</button>
-        <button onclick="showContent('kurucu')">KURUCU</button>
-    </nav>
-</header>
+<header>APİ & Bot Platformu</header>
 
-<!-- APİLERİMİZ -->
+<div class="container">
+    <div class="card" onclick="showContent('apis')"><h2>APİLERİMİZ</h2></div>
+    <div class="card" onclick="showContent('sorgu')"><h2>SORGU BOTU</h2></div>
+    <div class="card" onclick="showContent('kurucu')"><h2>KURUCU</h2></div>
+</div>
+
+<!-- APİLER -->
 <div class="content" id="apis">
     <h2>APİLERİMİZ</h2>
     <div class="api-list">
@@ -49,14 +48,14 @@
 </div>
 
 <!-- SORGU BOTU -->
-<div class="content" id="sorgu" style="display:none;">
+<div class="content" id="sorgu">
     <h2>Sorgu Botu</h2>
     <p>Telegram Sorgu Botuna gitmek için tıkla:</p>
     <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Sorgu Botu</button>
 </div>
 
 <!-- KURUCU -->
-<div class="content" id="kurucu" style="display:none;">
+<div class="content" id="kurucu">
     <h2>Kurucu</h2>
     <p>Kurucuya ulaşmak için tıkla:</p>
     <button class="send-btn" onclick="goToLink('https://t.me/Zynex00')">Kurucu</button>
