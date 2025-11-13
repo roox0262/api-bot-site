@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APİ & Bot Platformu</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>APİ & Bot Platformu</header>
+
+<div class="container">
+    <div class="card" onclick="showContent('apis')"><h2>APİLERİMİZ</h2></div>
+    <div class="card" onclick="showContent('sorgu')"><h2>SORGU BOTUMUZ</h2></div>
+    <div class="card" onclick="showContent('kurucu')"><h2>KURUCU</h2></div>
+</div>
+
+<div class="content" id="apis">
+    <h2>APİLERİMİZ</h2>
+    <div class="api-list">
+        <div class="api-item">
+            <span>Ad Soyad API</span>
+            <div class="api-buttons">
+                <button class="test-btn" onclick="testAPI('https://api.example.com/adsoyad')">Test Et</button>
+                <button class="copy-btn" onclick="copyAPI('https://api.example.com/adsoyad')">Kopyala</button>
+            </div>
+        </div>
+        <div class="api-item">
+            <span>Rastgele Kullanıcı API</span>
+            <div class="api-buttons">
+                <button class="test-btn" onclick="testAPI('https://api.example.com/randomuser')">Test Et</button>
+                <button class="copy-btn" onclick="copyAPI('https://api.example.com/randomuser')">Kopyala</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content" id="sorgu">
+    <h2>SORGU BOTUMUZ</h2>
+    <p>Telegram botunuza sorgu göndermek için butona tıklayın:</p>
+    <button class="send-btn" onclick="sendToTelegram('sorgu')">Sorgu Gönder</button>
+</div>
+
+<div class="content" id="kurucu">
+    <h2>KURUCU</h2>
+    <p>Kurucuya mesaj göndermek için:</p>
+    <button class="send-btn" onclick="sendToTelegram('kurucu')">Mesaj Gönder</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
