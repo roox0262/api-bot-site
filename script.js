@@ -16,8 +16,9 @@ function goToLink(url) {
 document.getElementById('play-music').addEventListener('click', function() {
   const music = document.getElementById('bg-music');
   music.play();
-  alert('🎶 BLOK3 ESCOBAR müzigi çalıyor!');
+  alert('🎶 BLOK3 ESCOBAR MÜZİGİ ÇALIYOR!');
 });
+
 
 
 
