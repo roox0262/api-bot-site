@@ -26,14 +26,19 @@
         <div class="api-item">
             <span>Ad Soyad API</span>
             <div class="api-buttons">
-                <button class="test-btn" onclick="openInNewTab('https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=')">Test Et</button>
+                <!-- Test Et artık <a> ile yeni sekmede açılacak -->
+                <a href="https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=" target="_blank">
+                    <button class="test-btn">Test Et</button>
+                </a>
                 <button class="copy-btn" onclick="copyAPI('https://dosya.alwaysdata.net/api/adsoyad.php?ad=roket&soyad=atar&il=&ilce=')">Kopyala</button>
             </div>
         </div>
         <div class="api-item">
             <span>Rastgele Kullanıcı API</span>
             <div class="api-buttons">
-                <button class="test-btn" onclick="openInNewTab('https://api.example.com/randomuser')">Test Et</button>
+                <a href="https://api.example.com/randomuser" target="_blank">
+                    <button class="test-btn">Test Et</button>
+                </a>
                 <button class="copy-btn" onclick="copyAPI('https://api.example.com/randomuser')">Kopyala</button>
             </div>
         </div>
