@@ -11,7 +11,14 @@ function copyAPI(url) {
         .catch(err => alert('Kopyalama hatası: ' + err));
 }
 
-// Telegram butonları
+// Telegram yönlendirme
 function goToLink(url) {
     window.open(url, '_blank');
 }
+
+// Müzik başlatma
+document.getElementById('play-music').addEventListener('click', function() {
+    const music = document.getElementById('bg-music');
+    music.play();
+    alert('Müzik başlatıldı 🎶');
+});
