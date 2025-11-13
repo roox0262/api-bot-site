@@ -16,15 +16,7 @@ function testAPI(url) {
         .catch(err => alert('API Hatası: ' + err));
 }
 
-function sendToTelegram(type) {
-    let message = type === 'sorgu' ? 'Sorgu botuna mesaj' : 'Kurucuya mesaj';
-    
-    fetch(`https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: '<CHAT_ID>', text: message })
-    })
-    .then(res => res.json())
-    .then(data => alert('Mesaj gönderildi!'))
-    .catch(err => alert('Hata: ' + err));
+// Telegram linklerine yönlendirme
+function goToLink(url) {
+    window.open(url, '_blank');
 }
