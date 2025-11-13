@@ -1,13 +1,15 @@
+// İçerik gösterme
 function showContent(section) {
     document.querySelectorAll('.content').forEach(c => c.style.display = 'none');
     document.getElementById(section).style.display = 'block';
 }
 
-// Yeni sekmede URL açma
+// Yeni sekmede URL açma (Test Et)
 function openInNewTab(url) {
     window.open(url, '_blank');
 }
 
+// Kopyalama
 function copyAPI(url) {
     navigator.clipboard.writeText(url)
         .then(() => alert('API kopyalandı: ' + url))
@@ -17,12 +19,4 @@ function copyAPI(url) {
 // Telegram butonları
 function goToLink(url) {
     window.open(url, '_blank');
-}
-
-// Örnek test API
-function testAPI(url) {
-    fetch(url)
-        .then(res => res.json())
-        .then(data => alert('API Yanıtı: ' + JSON.stringify(data)))
-        .catch(err => alert('API Hatası: ' + err));
 }
