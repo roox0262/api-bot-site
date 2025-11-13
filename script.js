@@ -1,4 +1,4 @@
-// Bölümler arası geçiş
+// Sayfa geçişleri
 function showContent(section) {
     document.querySelectorAll('.content').forEach(c => c.style.display = 'none');
     document.getElementById(section).style.display = 'block';
@@ -20,5 +20,5 @@ function goToLink(url) {
 document.getElementById('play-music').addEventListener('click', function() {
     const music = document.getElementById('bg-music');
     music.play();
-    alert('🎶 Bloc3 Escobar çalmaya başladı!');
+    alert('🎶 Bloc3 Escobar müziği çalıyor!');
 });
